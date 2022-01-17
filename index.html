@@ -6,16 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akshay Portfolio Website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
 
 </head>
 
 <body>
+
+    <!-- Header -->
     <header>
         <div class="logo">
-            <img src="img/Akshay_logo.png" alt="">
+            <!-- <img class="logo1" src="img/Akshay_logo.png" alt="" /> -->
+            <p class="logo1">
+                <-akshay->
+            </p>
         </div>
         <button class="nav-toggle" aria-label="toggle navigation">
             <span class="hamburger"></span>
@@ -25,7 +31,7 @@
                 <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
                 <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
                 <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">My Work</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
 
             </ul>
         </nav>
@@ -40,37 +46,32 @@
         <p class="section__subtitle section__subtitle--intro">
             front-end dev
         </p>
-        <img src="img/akki.jpg" alt="This is Akshay's image">
+        <img class="intro__img" src="img/akki.jpg" alt="This is Akshay's image">
 
     </section>
 
     <!--My Services-->
     <section class="my-services" id="services">
-        <h1 class="section_title section__title--services">What I Do</h1>
+        <h1 class="section__title section__title--services">What I Do</h1>
         <div class="services">
             <!--service-->
             <div class="service">
                 <h3>Design + Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt possimus, culpa nam voluptatum
-                    repellat numquam mollitia iste ad voluptate velit voluptatibus asperiores dolorum, odit aliquam
-                    ducimus ex accusantium expedita consequatur? Aperiam quia, possimus omnis iure ipsum tenetur quis
-                    aut temporibus.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt possimus, culpa nam voluptatum repellat numquam mollitia iste ad voluptate velit voluptatibus asperiores dolorum, odit aliquam ducimus ex accusantium expedita consequatur?
+                    Aperiam quia, possimus omnis iure ipsum tenetur quis aut temporibus.</p>
             </div>
             <!--service-->
             <div class="service">
                 <h3>E-Commerce</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo alias nobis quae cumque, officia
-                    consectetur, totam possimus perspiciatis a illum quia! Recusandae molestiae, esse quo provident
-                    nihil ex culpa enim necessitatibus natus veniam tenetur, nam repudiandae totam corporis excepturi
-                    aspernatur.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo alias nobis quae cumque, officia consectetur, totam possimus perspiciatis a illum quia! Recusandae molestiae, esse quo provident nihil ex culpa enim necessitatibus natus veniam
+                    tenetur, nam repudiandae totam corporis excepturi aspernatur.
+                </p>
             </div>
             <!--service-->
             <div class="service">
                 <h3>WordPress</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi distinctio exercitationem,
-                    dignissimos cumque omnis mollitia corporis deserunt minima eaque, vitae facere repudiandae, ipsa
-                    ullam consequuntur quae error suscipit iure molestiae earum adipisci voluptatem itaque explicabo
-                    cupiditate? Nobis tempore repellat modi?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi distinctio exercitationem, dignissimos cumque omnis mollitia corporis deserunt minima eaque, vitae facere repudiandae, ipsa ullam consequuntur quae error suscipit iure molestiae
+                    earum adipisci voluptatem itaque explicabo cupiditate? Nobis tempore repellat modi?</p>
             </div>
 
         </div>
@@ -80,79 +81,77 @@
     <!-- About Me -->
     <section class="about-me" id="about">
         <h2 class="section__title section__title--about">Who I Am</h2>
-        <p class="section__subtitle section__subtitle--about">Designer & Developer based out of India</p>
+        <p class="section__subtitle section__subtitle--about">Designer & Developer in India</p>
         <div class="about-me__body">
             <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat eaque esse inventore et eum provident
-                animi consectetur reprehenderit hic, quas ratione culpa non, aliquam laudantium ea incidunt expedita eos
-                tempora? A ullam illo, distinctio porro necessitatibus omnis saepe expedita natus hic laboriosam quod
-                pariatur, reiciendis itaque cum. Id, laboriosam eaque.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat eaque esse inventore et eum provident animi consectetur reprehenderit hic, quas ratione culpa non, aliquam laudantium ea incidunt expedita eos tempora? A ullam illo, distinctio porro necessitatibus
+                omnis saepe expedita natus hic laboriosam quod pariatur, reiciendis itaque cum. Id, laboriosam eaque.
             </p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae numquam recusandae quibusdam provident,
-                magnam facilis perspiciatis non ipsam accusantium est alias consequatur doloribus explicabo assumenda
-                possimus et ipsum fugiat voluptates eaque repellendus ut libero expedita optio sint. Ipsam optio,
-                aliquam ea quia incidunt deserunt ipsa harum, explicabo veniam consequuntur debitis.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae numquam recusandae quibusdam provident, magnam facilis perspiciatis non ipsam accusantium est alias consequatur doloribus explicabo assumenda possimus et ipsum fugiat voluptates
+                eaque repellendus ut libero expedita optio sint. Ipsam optio, aliquam ea quia incidunt deserunt ipsa harum, explicabo veniam consequuntur debitis.</p>
         </div>
 
-        <img src="img/akki2.jpg" alt="This is Akshay's Photo">
+        <img class="about-me__img" src="img/akki2.jpg" alt="This is Akshay's Photo">
     </section>
 
     <!-- My Work -->
     <section class="my-work" id="work">
         <h2 class="section__title">My Work</h2>
-        <p class="section__subtitle">A selection of my range of work</p>
+        <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
 
         <div class="portfolio">
 
             <a href="#" class="portfolio__item">
-                <img src="img/Rectangle 3@2x.png" alt="Portfolio_img">
+                <img class="portfolio__img" src="img/Rectangle 3@2x.png" alt="portfolio_img">
             </a>
             <a href="#" class="portfolio__item">
-                <img src="img/Rectangle 3-1@2x.png" alt="Portfolio_img">
+                <img class="portfolio__img" src="img/Rectangle 3-1@2x.png" alt="portfolio_img">
             </a>
             <a href="#" class="portfolio__item">
-                <img src="img/Rectangle 3-2@2x.png" alt="Portfolio_img">
+                <img class="portfolio__img" src="img/Rectangle 3-2@2x.png" alt="portfolio_img">
             </a>
             <a href="#" class="portfolio__item">
-                <img src="img/Rectangle 3-3@2x.png" alt="Portfolio_img">
+                <img class="portfolio__img" src="img/Rectangle 3-3@2x.png" alt="portfolio_img">
             </a>
             <a href="#" class="portfolio__item">
-                <img src="img/Rectangle 3-4@2x.png" alt="Portfolio_img">
+                <img class="portfolio__img" src="img/Rectangle 3-4@2x.png" alt="portfolio_img">
             </a>
             <a href="#" class="portfolio__item">
-                <img src="img/Rectangle 3-5@2x.png" alt="Portfolio_img">
+                <img class="portfolio__img" src="img/Rectangle 3-5@2x.png" alt="portfolio_img">
             </a>
             <a href="#" class="portfolio__item">
-                <img src="img/Rectangle 3-6@2x.png" alt="Portfolio_img">
+                <img class="portfolio__img" src="img/Rectangle 3-6@2x.png" alt="portfolio_img">
             </a>
             <a href="#" class="portfolio__item">
-                <img src="img/Rectangle 3-7@2x.png" alt="Portfolio_img">
+                <img class="portfolio__img" src="img/Rectangle 3-7@2x.png" alt="portfolio_img">
             </a>
             <a href="#" class="portfolio__item">
-                <img src="img/Rectangle 3-8@2x.png" alt="Portfolio_img">
+                <img class="portfolio__img" src="img/Rectangle 3-8@2x.png" alt="portfolio_img">
             </a>
             <a href="#" class="portfolio__item">
-                <img src="img/Rectangle 3-9@2x.png" alt="Portfolio_img">
+                <img class="portfolio__img" src="img/Rectangle 3-9@2x.png" alt="portfolio_img">
             </a>
             <a href="#" class="portfolio__item">
-                <img src="img/Rectangle 3-10@2x.png" alt="Portfolio_img">
+                <img class="portfolio__img" src="img/Rectangle 3-10@2x.png" alt="portfolio_img">
             </a>
             <a href="#" class="portfolio__item">
-                <img src="img/Rectangle 3-11@2x.png" alt="Portfolio_img">
+                <img class="portfolio__img" src="img/Rectangle 3-11@2x.png" alt="portfolio_img">
             </a>
 
         </div>
     </section>
 
     <!-- footer -->
-    <footer>
+    <footer class="footer">
         <a href="mailto:akshaygupta972@gmail.com" class="footer__link">akshaygupta972@gmail.com</a>
         <ul class="social-list">
-            <li class="social-list__item"><a href="https://www.facebook.com/" class="social-list__link">Facebook</a></li>
-            <li class="social-list__item"><a href="https://github.com/" class="social-list__link">Github</a></li>
-            <li class="social-list__item"><a href="https://twitter.com/" class="social-list__link">Twitter</a></li>
-            <li class="social-list__item"><a href="https://www.linkedin.com/" class="social-list__link">LinkedIn</a></li>
+            <li class="social-list__item"><a href="https://www.facebook.com/" class="social-list__link"><i class="fab fa-facebook"></i></a></li>
+            <li class="social-list__item"><a href="https://github.com/" class="social-list__link"><i class="fab fa-github"></i></a></li>
+            <li class="social-list__item"><a href="https://twitter.com/" class="social-list__link"><i class="fab fa-twitter"></i></a></li>
+            <li class="social-list__item"><a href="https://www.linkedin.com/" class="social-list__link"><i class="fab fa-linkedin"></i></a></li>
         </ul>
+
+
     </footer>
 </body>
 
