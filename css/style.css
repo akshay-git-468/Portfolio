@@ -34,6 +34,10 @@
 
 /* General styles */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--clr-light);
     color: var(--clr-dark);
@@ -187,6 +191,27 @@ header {
     position: absolute;
     right: 1em;
     top: 1em;
+    z-index: 1000;
+}
+
+.nav-open .nav {
+    transform: translateX(0);
+}
+
+.nav-open .nav-toggle {
+    position: fixed;
+}
+
+.nav-open .hamburger {
+    transform: rotate(.625turn);
+}
+
+.nav-open .hamburger::after {
+    opacity: 0;
+}
+
+.nav-open .hamburger::before {
+    transform: rotate(90deg) translateX(-6px);
 }
 
 .hamburger {
@@ -197,7 +222,7 @@ header {
 .hamburger::before,
 .hamburger::after,
 .hamburger {
-    background: var(--clr-dark);
+    background: var(--clr-accent);
     width: 2em;
     height: 3px;
     border-radius: 1em;
@@ -235,13 +260,14 @@ header {
 
 .section__subtitle--intro {
     display: inline-block;
+    padding-right: 50px;
 }
 
 @media(min-width:600px) {
     .intro {
         display: grid;
         width: min-content;
-        margin: 0 auto;
+        margin: 0 auto 100px;
         grid-column-gap: 1em;
         grid-template-areas: "img title" "img subtitle";
         grid-template-columns: min-content max-content;
@@ -309,6 +335,9 @@ header {
     .service+.service {
         margin: 0 2em;
     }
+    .my-services {
+        margin-bottom: 100px;
+    }
 }
 
 
@@ -333,6 +362,7 @@ header {
         grid-template-columns: 1fr 300px;
         grid-template-areas: "title img" "subtitle img" "text img";
         grid-column-gap: 2em;
+        margin-bottom: 100px;
     }
     .section__title--about {
         grid-area: title;
