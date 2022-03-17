@@ -255,7 +255,7 @@ header {
 .intro__img {
     box-shadow: var(--bs);
     height: 370px;
-    width: 200px;
+    width: 225px;
 }
 
 .section__subtitle--intro {
@@ -274,7 +274,7 @@ header {
     }
     .intro__img {
         grid-area: img;
-        min-width: 200px;
+        min-width: 250px;
         position: relative;
         z-index: 2;
     }
@@ -333,7 +333,7 @@ header {
         margin-right: auto;
     }
     .service+.service {
-        margin: 0 2em;
+        margin: 0 1em;
     }
     .my-services {
         margin-bottom: 100px;
